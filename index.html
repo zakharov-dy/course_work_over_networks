@@ -12,10 +12,10 @@
 <body>
 <script>
    var _onParagraphClick = function(id){
-      console.log('2323');
-      console.log(id);
-      a = $('#'+id.slice(2));
-      console.log(a);
+      paragraphHeader = $('#'+id.slice(2) + ' .paragraph-header').html();
+      paragraphBody = $('#'+id.slice(2) + ' .paragraph-body').html();
+      $("#paragraph-title").text(paragraphHeader)
+      $("#paragraph-content").html(paragraphBody)
 
    }
 </script>
@@ -31,7 +31,7 @@
             <ul class="dropdown-menu">
                <li class="dropdown-header"> Web протоколы</li>
                <li><a href="#" id="p-1" onclick="_onParagraphClick(this.id)">Action</a></li>
-               <li><a href="#">Another action</a></li>
+               <li><a href="#" id="p-2" onclick="_onParagraphClick(this.id)">Another action</a></li>
                <li><a href="#">Something else here</a></li>
                <li role="separator" class="divider"></li>
                <li class="dropdown-header"> Web технологии </li>
@@ -59,13 +59,30 @@
    </div>
 </nav>
 <div class="jumbotron">
-   <div id="title"></div>
-   <div id="content">
+   <h1 id="paragraph-title"></h1>
+   <div id="paragraph-content">
 
    </div>
 </div>
+
+
 <div class="paragraph" id="1">
-   <div class=""></div>
+   <div class="paragraph-header">header</div>
+   <div class="paragraph-body">
+      body
+      <div class="">
+         Hello
+      </div>
+   </div>
+</div>
+<div class="paragraph" id="2">
+   <div class="paragraph-header">header2</div>
+   <div class="paragraph-body">
+      body222
+      <div class="">
+         Hello222
+      </div>
+   </div>
 </div>
 </body>
 </html>
