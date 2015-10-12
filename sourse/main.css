@@ -1,4 +1,10 @@
-.paragraph
+.cs-paragraph
 {
    display: none;
+}
+.cs-header
+{
+   background-color: #2b333d;
+   color: white;
+
 }

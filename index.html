@@ -5,20 +5,14 @@
    <title>Курсовая</title>
    <script src="sourse/jquery-2.1.4.min.js" charset="utf-8"></script>
    <script src="sourse/bootstrap-3.3.5-dist/js/bootstrap.min.js" charset="utf-8"></script>
+   <script src="sourse/main.js" charset="utf-8"></script>
    <link rel="stylesheet" href="sourse/bootstrap-3.3.5-dist/css/bootstrap.min.css">
    <link rel="stylesheet" href="sourse/bootstrap_upgrade.css">
    <link rel="stylesheet" href="sourse/main.css">
+
 </head>
 <body>
-<script>
-   var _onParagraphClick = function(id){
-      paragraphHeader = $('#'+id.slice(2) + ' .paragraph-header').html();
-      paragraphBody = $('#'+id.slice(2) + ' .paragraph-body').html();
-      $("#paragraph-title").text(paragraphHeader)
-      $("#paragraph-content").html(paragraphBody)
 
-   }
-</script>
 <nav class="navbar navbar-default navbar-fixed-top navbar-inverse">
    <div class="navbar-header">
       <a class="navbar-brand" href="#">Анализ современных Web-технологий</a>
@@ -30,27 +24,29 @@
             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> <span class="glyphicon glyphicon-bookmark"></span> Содержание <span class="caret"></span></a>
             <ul class="dropdown-menu">
                <li class="dropdown-header"> Web протоколы HTTP и HTTPS</li>
-               <li><a href="#" id="p-1" onclick="_onParagraphClick(this.id)">Action</a></li>
-               <li><a href="#" id="p-2" onclick="_onParagraphClick(this.id)">Another action</a></li>
+               <li><a href="#" class="cs-head" id="p-1">Что-то</a></li>
+               <li><a href="#" class="cs-head" id="p-2">Ещё что-то</a></li>
                <li><a href="#">Something else here</a></li>
                <li role="separator" class="divider"></li>
                <li class="dropdown-header"> Web технологии </li>
-               <li><a href="#">Стандарты веб-технологий</a></li>
-               <li><a href="#">Понятие о клиент-сервернй архитектуре</a></li>
-               <li><a href="#">front-end</a></li>
-               <li><a href="#">back-end</a></li>
-               <li><a href="#">Современные браузеры</a></li>
+               <li><a href="#" class="cs-head" id="p-3">Стандарты веб-технологий</a></li>
+               <li><a href="#" class="cs-head" id="p-7">Современные браузеры</a></li>
+               <li><a href="#" class="cs-head" id="p-4">Понятие о клиент-сервернй архитектуре Веб-приложений</a></li>
+               <li><a href="#" class="cs-head" id="p-html-css">HTML и CSS</a></li>
+               <li><a href="#" class="cs-head" id="p-javascript">JavaScript</a></li>
+               <li><a href="#" class="cs-head" id="p-front-end-frameworks">Основные понятия о front-end фреймворках</a></li>
+               <li><a href="#" class="cs-head" id="p-6">back-end</a></li>
                <li role="separator" class="divider"></li>
                <li class="dropdown-header"> Веб серверы </li>
-               <li><a href="#">Принципы работы веб-серверов</a></li>
-               <li><a href="#">Современные веб-серверы</a></li>
+               <li><a href="#" class="cs-head">Принципы работы веб-серверов</a></li>
+               <li><a href="#" class="cs-head">Современные веб-серверы</a></li>
             </ul>
          </li>
       </ul>
 
       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
          <ul class="nav navbar-nav">
-            <li><a href="#"><span class="glyphicon glyphicon-home"></span> Главная </a></li>
+            <li><a href="#" class="cs-head" id="p-home"><span class="glyphicon glyphicon-home"></span> Главная </a></li>
             <li><a href="#"><span class="glyphicon glyphicon-briefcase"></span> Технологии </a></li>
             <li><a href="#"><span class="glyphicon glyphicon-book"></span> Список литературы </a></li>
          </ul>
@@ -58,16 +54,77 @@
       </div>
    </div>
 </nav>
+
 <div class="jumbotron">
-   <h1 id="paragraph-title"></h1>
-   <div id="paragraph-content">
+   <div class="cs-header" id="content" tabindex="-1">
+      <div class="container">
+         <div class="col-lg-4 col-md-4">
+            <h1 id="paragraph-title"></h1>
+         </div>
+         <div class="col-lg-8 col-md-8">
+            <h3 id="paragraph-subtitle" class="text-right"></h3>
+         </div>
+      </div>
+   </div>
+
+
+   <div id="paragraph-content" class="container">
 
    </div>
 </div>
 
 
-<div class="paragraph" id="1">
+<div class="cs-paragraph" id="home">
+   <div class="paragraph-header">Главная</div>
+   <div class="paragraph-subheader">Анализ современных веб технологий и соответствующих протоколов. Языки и средства создания веб приложений. Архитектура, создание и эксплуатация веб-серверов</div>
+   <div class="paragraph-body">
+      <div class="row">
+         <div class="col-md-7">
+            <h2 class="featurette-heading"> Веб-протокол HTTP <span class="text-muted">и всё, что с ним связано</span></h2>
+            <p class="lead">Здесь будет описание</p>
+         </div>
+         <div class="col-md-5">
+            <img class="featurette-image img-responsive center-block" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
+         </div>
+      </div>
+
+      <hr class="featurette-divider">
+
+      <div class="row">
+         <div class="col-md-7 col-md-push-5">
+            <h2 class="featurette-heading">Языки и средства создания Веб-приложений. <span class="text-muted">Самая интересная часть.</span></h2>
+            <p class="lead">В данной главе повествуется о том, как работает веб с позиции программиста. Дается представление о языках программирования, архитектуре веб-приложений, о современных браузерах.</p>
+         </div>
+         <div class="col-md-5 col-md-pull-7">
+            <img class="featurette-image img-responsive center-block" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
+         </div>
+      </div>
+
+      <hr class="featurette-divider">
+
+      <div class="row">
+         <div class="col-md-7 col-md-5">
+            <h2 class="featurette-heading">Веб-серверы. <span class="text-muted">Ещё не придумано</span></h2>
+            <p class="lead">В последней главе рассматриваются принципы работы современных Веб-серверов, а также дается краткая справка по наиболее популярным Веб-серверам.</p>
+         </div>
+         <div class="col-md-5 col-md-7">
+            <img class="featurette-image img-responsive center-block" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
+         </div>
+      </div>
+   </div>
+</div>
+
+<div class="cs-paragraph" id='front-end-frameworks'>
+   <div class="paragraph-header">Front-end фреймворки</div>
+   <div class="paragraph-subheader"></div>
+   <div class="paragraph-body">
+
+   </div>
+</div>
+
+<div class="cs-paragraph" id="1">
    <div class="paragraph-header">header</div>
+   <div class="paragraph-subheader">hrello</div>
    <div class="paragraph-body">
       body
       <div class="">
@@ -75,8 +132,10 @@
       </div>
    </div>
 </div>
-<div class="paragraph" id="2">
+
+<div class="cs-paragraph" id="2">
    <div class="paragraph-header">header2</div>
+   <div class="paragraph-subheader">hrello</div>
    <div class="paragraph-body">
       body222
       <div class="">
@@ -84,5 +143,80 @@
       </div>
    </div>
 </div>
+
+<div class="cs-paragraph" id="javascript">
+   <div class="paragraph-header">JavaScript</div>
+   <div class="paragraph-subheader"></div>
+   <div class="paragraph-body">
+
+      <div class="row">
+         <h2>Краткая характеристика</h2>
+         <ui class="lead">
+            <li>С-синтаксис</li>
+            <li>Нестрогая типизация</li>
+            <li>Прототипно-ориентированный</li>
+            <li>Сценарный</li>
+            <li>Используется не только в браузерах</li>
+            <li>Самый популярный язык программирования в мире</li>
+         </ui>
+      </div>
+
+      <hr class="featurette-divider">
+
+      <div class="row">
+         <h2>История создания</h2>
+         <p>
+            Во времена великих войн браузеров компания Netscape наняла некоего Брендана Эйха на должность разработчика, поставив перед ним задачу внедрения аналога Лиспа в свой продукт. Техническое задание было весьма размытым и не очевидным (язык должен был управлять HTML, java-аплетами, изображениями и т.д. ). Язык был написан Эйхом за 10 дней, и первоначально имел название Mocha(это не шутка). Позднее, после нескольких переименований, язык назвали JavaScript, поскольку в те времена язык Java был очень популярен, и считался эталонным. Собственно название до сих пор принадлежит Oracle.
+         </p>
+         <p>
+            По инициативе компании Netscape была проведена стандартизация языка ассоциацией ECMA. Разработка первой редакции спецификации началась в ноябре 1996 года.
+         </p>
+
+      </div>
+
+      <hr class="featurette-divider">
+      <div class="row">
+         <h2>
+            Анализ JavaScript
+         </h2>
+         <p>
+            JavaScript - язык, в основе которого лежат как хорошие, так и плохие вещи (порой, даже очень плохие). Хорошие вещи связаны с применением функций, нестрогой типизацией и динамическими объектами. Плохие вещи - модель программирования на основе глобальных переменных, странный синтаксис наследования, множество особенностей, которые надо просто “знать”.
+         </p>
+         <p>
+            Почти всё в JavaScript представляет собой объекты: функция - это объект, массив - тоже объект, ну и конечно объект - это тоже объект.  При этом объекты создаются простым указанием их компонентов, и не нуждаются в классах(хотя JavaScript позволяет создавать объекты на основе классов). Это может показаться безумием для программистов с классическим образованием, но при правильном использовании это очень удобно.
+         </p>
+
+         <p>
+            Поскольку почти всё в JavaScript это объект, то функции, к примеру, могут содержать в себе другие функции, массивы и другие объекты. При этом для создания нового объекта используется прототип - объект, от которого необходимо провести наследование.
+         </p>
+
+      </div>
+      <hr class="featurette-divider">
+      <div class="row">
+         <h2>
+            Что умеет JavaScript
+         </h2>
+         <p>
+            Современный JavaScript — это «безопасный» язык программирования общего назначения. Он не предоставляет низкоуровневых средств работы с памятью, процессором, так как изначально был ориентирован на браузеры, в которых это не требуется. Однако на нем можно быстро писать серьезные приложения, сосредотачивая внимание на самих алгоритмах, а не на синтаксисе.
+            В браузере JavaScript умеет делать всё, что относится к манипуляции со страницей, взаимодействию с посетителем и, в какой-то мере, с сервером:
+
+         </p>
+         <ul>
+            <li>Реагировать на действия посетителя, обрабатывать клики мыши, перемещения курсора, нажатия на клавиатуру и т.п.</li>
+            <li>Посылать запросы на сервер и загружать данные без перезагрузки страницы (эта технология называется "AJAX").</li>
+            <li>Получать и устанавливать cookie, запрашивать данные, выводить сообщения</li>
+            <li>И многое, многое другое!</li>
+         </ul>
+         <hr class="featurette-divider">
+         <div class="row">
+            <h2>
+               Плохие вещи
+            </h2>
+            <p>
+               В книге Дугласа Крокфорда под названием  “JavaScript - сильные стороны”, под главы “Кошмарные вещи” и “Плохие вещи” отводится 16 страниц, в то время, как в глава “Прекрасные черты” содержит всего 3 страницы текста. Сам Крокфорд - эксперт в JavaScript, один из его самых ярых защитников, а также основатель формата JSON. Понимаете, о чем я?
+            </p>
+         </div>
+      </div>
+   </div>
 </body>
 </html>
