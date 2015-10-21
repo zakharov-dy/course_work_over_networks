@@ -2,7 +2,7 @@
 <html>
 <head>
    <meta charset="utf-8">
-   <title>Курсовая</title>
+   <title>Курсовая работа</title>
    <script src="sourse/jquery-2.1.4.min.js" charset="utf-8"></script>
    <script src="sourse/bootstrap-3.3.5-dist/js/bootstrap.min.js" charset="utf-8"></script>
    <script src="sourse/main.js" charset="utf-8"></script>
@@ -14,9 +14,9 @@
 <body>
 <div class="cs-navbar">
    <div class="container">
-      <nav class="navbar navbar-static-top navbar-inverse">
+      <nav class="navbar navbar-static-top cs-navbar-content">
          <div class="navbar-header">
-            <a class="navbar-brand" href="#" id="paragraph-title"></a>
+            <p class="navbar-brand" id="paragraph-title"></p>
          </div>
 
          <div class="container-fluid">
@@ -24,6 +24,7 @@
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                <ul class="nav navbar-nav">
                   <li><a href="#" class="cs-head" id="p-home"><span class="glyphicon glyphicon-home"></span> Главная </a></li>
+                  <li><a href="#" class="cs-head" id="p-title-page"><span class="glyphicon glyphicon-home"></span> Главная </a></li>
                   <li><a href="#"><span class="glyphicon glyphicon-briefcase"></span> Технологии </a></li>
                   <li><a href="#"><span class="glyphicon glyphicon-book"></span> Список литературы </a></li>
                </ul>
@@ -52,6 +53,16 @@
                         веб-технологий
                      </a>
                   </li>
+                  <li class="list-group-item">
+                     <a href="#" class="cs-head" id="p-HTTP">
+                        Общие сведения о HTTP
+                     </a>
+                  </li>
+                  <li class="list-group-item">
+                     <a href="#" class="cs-head" id="p-HTTP-struct">
+                        Структура HTTP пакета
+                     </a>
+                  </li>
                </ul>
             </div>
          </div>
@@ -66,7 +77,7 @@
             <div id="collapseListGroup1" class="panel-collapse collapse" role="tabpanel" aria-labelledby="collapseListGroupHeading1" aria-expanded="true">
                <ul class="list-group">
                   <li class="list-group-item">
-                     <a href="#" class="cs-head" id="p-4">Понятие о клиент-сервернй архитектуре Веб-приложений
+                     <a href="#" class="cs-head" id="p-cl-srv-architecture">Понятие о клиент-сервернй архитектуре Веб-приложений
                      </a>
                   </li>
                   <li class="list-group-item">
@@ -91,7 +102,7 @@
                   </li>
                   <li class="list-group-item">
                      <a href="#" class="cs-head" id="p-back-end-frameworks">
-                        back-end и back-end фреймворки
+                        Back-end и back-end фреймворки
                      </a>
                   </li>
                </ul>
@@ -113,7 +124,7 @@
                      </a>
                   </li>
                   <li class='list-group-item'>
-                     <a href="#" class="cs-head">
+                     <a href="#" class="cs-head" id="p-modern-web-srv">
                         Современные веб-серверы
                      </a>
                   </li>
@@ -148,15 +159,280 @@
 
 
 
+<div class="cs-paragraph" id="title-page">
+   <div class="paragraph-header">Титульная страница</div>
+   <div class="paragraph-body">
+      <h4 class="text-center"><b>ГОУВПО</b></h4>
+      <h4 class="text-center"><b>Уфимский государственный авиационный технический университет</b></h4>
+      <p class="text-right">Кафедра вычислительной техники и защиты информации</p>
+      <h3 class="text-center">Курсовая работа по дисциплине "Сети и системы передачи данных"</h3>
+      <h3 class="text-center"></h3>
+      <h2 class="text-center">"Анализ современных web-технологий и протокола HTTP.
+         Языки и средства создания web-приложений. Современные Веб серверы."</h2>
+      <p class="text-left">Выполнил: студент гр. БПС-403</p>
+      <p class="text-left">Д. Ю. Захаров</p>
+      <p class="text-left">Проверил: кандидат физико-математических наук, доцент</p>
+      <p class="text-left">Р.А. Гараев</p>
+      <p class="text-center">Уфа 2015</p>
+   </div>
+   </div>
 
+<div class="cs-paragraph" id="HTTP-struct">
+   <div class="paragraph-header">Общие сведения о HTTP</div>
+   <div class="paragraph-body">
+      <h2 class="text-center">Структура HTTP пакета</h2>
+      <h3>Три части HTTP</h3>
+      <p>Каждое HTTP-сообщение состоит из трёх частей, которые передаются в указанном порядке:</p>
+      <ul>
+         <li>Первая строка - определяет тип сообщения;</li>
+         <li>Заголовки - разная полезная информация, которая характеризует тело сообщения, параметры передачи и прочие сведения;</li>
+         <li>Тело сообщения - это сгенерированный html-код, который браузер потом будет отображать. Обязательно должно отделяться от заголовков пустой строкой.</li>
+      </ul>
+      <img src="sourse/http.jpg" alt="" class="img-responsive">
+      <div class="row">
+         <div class="col-lg-6 col-md-6">
+            <h3>HTTP-запрос</h3>
+            <ul>
+               <li>Метод - название запроса, одно слово заглавными буквами;
+               </li>
+               <li>URI - определяет путь к запрашиваемому документ</li>
+               <li>Версия - пара разделённых точкой арабских цифр. Например: 1.1</li>
+            </ul>
+         </div>
+         <div class="col-lg-6 col-md-6">
+            <h3>HTTP-ответ</h3>
+            <ul>
+               <li>Версия - пара разделённых точкой арабских цифр, как в запросе;</li>
+               <li>Код состояния - три цифры. По коду состояния определяеться дальнейшее содержимое сообщения и поведение клиента;</li>
+               <li>Пояснение - текстовое короткое пояснение к коду ответа для пользователя. Никак не влияет на сообщение и являеться не обязательным.</li>
+            </ul>
+         </div>
+         <h3>Методы HTTP</h3>
+         <table class="table">
+            <tbody><tr>
+               <td>GET</td>
+               <td>позволяет получить информацию от сервера, тело запроса всегда остается пустым;</td>
+            </tr>
+            <tr>
+               <td>HEAD</td>
+               <td>аналогичен GET, но тело ответа остается всегда пустым, позволяет проверить доступность запрашиваемого ресурса и прочитать HTTP-заголовки ответа;</td>
+            </tr>
+            <tr>
+               <td>POST</td>
+               <td>позволяет загрузить информацию на сервер, по смыслу изменяет ресурс на сервере, но зачастую используется и для создания ресурса на сервере, тело запроса содержит изменяемый/создаваемый ресурс;</td>
+            </tr>
+            <tr>
+               <td>PUT</td>
+               <td>аналогичен POST, но по смыслу занимается созданием ресурса, а не его изменением, тело запроса содержит создаваемый ресурс;</td>
+            </tr>
+            <tr>
+               <td>DELETE</td>
+               <td>удаляет ресурс с сервера.</td>
+            </tr>
+            </tbody>
+         </table>
+         <h3>Группы кодов состояния, содержащиеся в ответах сервера</h3>
+         <table class="table">
+            <thead>
+            <tr>
+               <td>Код</td>
+               <td>Значение</td>
+               <td>Примеры</td>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+               <td>1xx</td>
+               <td>Информация</td>
+               <td>100 = сервер согласен обрабатывать запросы клиента</td>
+            </tr>
+            <tr>
+               <td>2xx</td>
+               <td>Успех</td>
+               <td>200 = запрос успешно обработан; 204 = содержимое отсутствует </td>
+            </tr>
+            <tr>
+               <td>3xx</td>
+               <td>Перенаправление</td>
+               <td>301 = страница перемещена; 304 = кэшированная страница все еще доступна</td>
+            </tr>
+            <tr>
+               <td>4xx</td>
+               <td>Ошибка клиента</td>
+               <td>403 = ошибка доступа; 404 = страница не найдена</td>
+            </tr>
+            <tr>
+               <td>5xx</td>
+               <td>Ошибка сервера</td>
+               <td>500 = внутренняя ошибка сервера; 503 = попробуйте еще раз позднее</td>
+            </tr>
+            </tbody>
+         </table>
 
+         <h3>Некоторые заголовки сообщений протокола HTTP</h3>
+         <table class="table">
+            <thead>
+            <tr>
+               <td>Заголовок</td>
+               <td>Тип</td>
+               <td>Содержимое</td>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+               <td>User-Agent</td>
+               <td>Запрос</td>
+               <td>Информация о браузере и его платформе</td>
+            </tr>
+            <tr>
+               <td>Accept</td>
+               <td>Запрос</td>
+               <td>Тип страниц, поддерживаемых клиентом</td>
+            </tr>
+            <tr>
+               <td>Accept-Charset</td>
+               <td>Запрос</td>
+               <td>Поддерживаемые клиентом наборы символов</td>
+            </tr>
+            <tr>
+               <td>Accept-Encoding</td>
+               <td>Запрос</td>
+               <td>Поддерживаемые клиентом типы кодирования</td>
+            </tr>
+            <tr>
+               <td>Accept-Language</td>
+               <td>Запрос</td>
+               <td>Естественные языки, понимаемые клиентом</td>
+            </tr>
+            <tr>
+               <td>If-Modified-Since</td>
+               <td>Запрос</td>
+               <td>Время и дата последнего обновления</td>
+            </tr>
+            <tr>
+               <td>If-None-Match</td>
+               <td>Запрос</td>
+               <td>Теги, отосланные с последнего обновления</td>
+            </tr>
+            <tr>
+               <td>Host</td>
+               <td>Запрос</td>
+               <td>DNS-имя сервера</td>
+            </tr>
+            <tr>
+               <td>Authorization</td>
+               <td>Запрос</td>
+               <td>Список персональных идентификаторов клиента</td>
+            </tr>
+            <tr>
+               <td>Referer</td>
+               <td>Запрос</td>
+               <td>URL, с которого был отправлен предыдущий запрос</td>
+            </tr>
+            <tr>
+               <td>Cookie</td>
+               <td>Запрос</td>
+               <td>Отправка ранее принятого cookie-файла на сервер</td>
+            </tr>
+            <tr>
+               <td>Set-Cookie</td>
+               <td>Ответ</td>
+               <td>Сервер хочет, чтобы клиент сохранил cookie</td>
+            </tr>
+            <tr>
+               <td>Server</td>
+               <td>Ответ</td>
+               <td>Информация о сервере</td>
+            </tr>
+            <tr>
+               <td>Content-Encoding</td>
+               <td>Ответ</td>
+               <td>Тип кодирования содержимого (например, gzip)</td>
+            </tr>
+            <tr>
+               <td>Content-Language</td>
+               <td>Ответ</td>
+               <td>Естественный язык, используемый на странице</td>
+            </tr>
+            <tr>
+               <td>Content-Length</td>
+               <td>Ответ</td>
+               <td>Размер страницы в байтах</td>
+            </tr>
+            <tr>
+               <td>Last-Modified</td>
+               <td>Ответ</td>
+               <td>Время и дата внесения последних изменений в страницу</td>
+            </tr>
+            <tr>
+               <td>Expires</td>
+               <td>Ответ</td>
+               <td>Время и дата, когда страница перестанет считаться действительной</td>
+            </tr>
+            <tr>
+               <td>Accept-Ranges</td>
+               <td>Ответ</td>
+               <td>Сервер готов принимать запросы на страницы указанного размера</td>
+            </tr>
+            <tr>
+               <td>Date Запрос/</td>
+               <td>Ответ</td>
+               <td>Дата и время отправки сообщения</td>
+            </tr>
+            <tr>
+               <td>Range</td>
+               <td>Запрос/ Ответ</td>
+               <td>Идентифицирует часть страницы</td>
+            </tr>
+            <tr>
+               <td>Cache-Control</td>
+               <td>Запрос/ Ответ</td>
+               <td>Указание на то, как обрабатывать кэш</td>
+            </tr>
+            <tr>
+               <td>ETag</td>
+               <td>Запрос/ Ответ</td>
+               <td>Тег для контента страницы</td>
+            </tr>
+            <tr>
+               <td>Upgrade</td>
+               <td>Запрос/ Ответ</td>
+               <td>Протокол, на который хочет переключиться отправитель</td>
+            </tr>
+            </tbody>
+         </table>
+      </div>
+   </div>
+</div>
+<div class="cs-paragraph" id="HTTP">
+   <div class="paragraph-header">Общие сведения о HTTP</div>
+   <div class="paragraph-body">
+      <h2>Общие сведения о HTTP</h2>
+      <h3>Кратко об HTTP</h3>
+      <p>HTTP (HyperText Transfer Protocol — протокол передачи гипертекста) - простой протокол прикладного уровня, работающий по принципу запрос-ответ,  обычно содержится в пакете TCP. </p>
+      <p>Несмотря на свою прикладную природу HTTP всё больше становится больше похож на транспортный протокол, который предоставляет способ передачи контента из одной сети в другую. Эти процессы не всегда идут в рамках общения веб-браузера с веб-сервером. </p>
+      <p>Медиаплеер может использовать HTTP, чтобы обратиться к серверу и получить информацию об альбоме. Антивирус может использовать HTTP для того, чтобы загрузить последние обновления. Разработчики — для получения файлов по какому-либо проекту. Бытовая электроника, такая как рамки для цифровых фотографий, часто используют HTTP сервер как интерфейс, связывающий их с внешним миром. Коммуникации между компьютерами все чаще идут при помощи HTTP. В общем HTTP популярен, и скорее всего эта популярность будет сохраняться долгое время.
+      </p>
+      <h3>Соединения</h3>
+      <p>Обычный способ взаимодействия браузера с сервером заключается в установке TCP соединения с портом 80 сервера. Ценность использования TCP в том, что ни браузерам, ни серверам не приходится беспокоиться о том, что делать со слишком длинными сообщениями, надежностью и контролем перегрузки. Все это обеспечивается протоколом TCP. </p>
+      <h4>HTTP 1.0</h4>
+      <p>Ранее, в HTTP 1.0 после установки соединения посылался один запрос, на который приходил один ответ. После этого TCP-соединение разрывалось. В то время типичная веб-страница целиком состояла из HTML-текста, и такой способ взаимодействия был адекватным. Однако вскоре средняя веб-страница стала изобиловать большим количеством ссылок на различные значки и другие украшения. Очевидно, что установка TCP-соединения для передачи одного значка оказалась нерациональной и слишком дорогой. </p>
 
-
-
-
-
-
-
+      <h4>HTTP 1.1</h4>
+      <p>В протокол  HTTP 1.1 была включена поддержка постоянного соединения (persistent connection). Это означало, что появилась возможность установки TCP-соединения, отправки запроса, получения ответа, а затем передачи и приема дополнительных запросов и ответов. Эта стратегия называется повторным использованием соединения (connection reuse). Таким образом, снизились накладные расходы, возникавшие при постоянных установках и разрывах соединения. Стало возможным также конвейеризировать запросы, то есть отправлять запрос 2 еще до прибытия ответа на запрос 1.
+      </p>
+      <p>
+         Разница в производительности между этими тремя случаями показана на рисунке.
+      </p>
+      <img src="sourse/connect.png" alt="" class="img-responsive">
+      <p>В первой части мы видим три запроса, отсылаемых один за другим, при этом для каждого устанавливается отдельное соединение. Предположим, что это представление страницы с двумя размещенными на ней картинками, находящимися на одном сервере. URL изображений определяется при получении главной страницы, так что они получаются позднее ее. Сегодня на обычной странице присутствует около 40 других объектов, которые должны быть получены для ее отображения. Но это сделает рисунок огромным, так что в примере используется  всего два размещенных объекта.</p>
+      <p>В центре рисунка  страница получена при помощи постоянного соединения. То есть TCP-соединение открывается с самого начала, затем посылаются те же самые 3 запроса, как и раньше один за другим, и только после этого соединение закрывается. Такой алгоритм является более производительным.
+      </p>
+      <p>
+         Наконец, в правой части рисунка,  установлено одно постоянное соединение, а запросы передаются конвейеризовано. Второй и третий запросы отсылаются за особенно короткий промежуток времени, так как была получена достаточно большая часть главной страницы, чтобы можно было сделать вывод о том, что изображения должны быть загружены и отображены. В итоге приходят ответы на эти запросы. Этот метод сокращает время, в течение которого сервер не занят делом, так что он и дальше повышает производительность. Основной вопрос данной схемы — это «когда закрывать соединение?» Соединение с сервером не должно разрываться, пока загружается страница. На практике клиенты и серверы обычно сохраняют постоянное соединение, пока не пройдет какого-то небольшого промежутка времени (например, 60 с), в течение которого не будет отослано ни одного запроса и не будет принято ни одного ответа, или же в том случае, если открыто слишком много соединений и некоторые следует закрыть.
+      </p>
+   </div>
+</div>
 
 <div class="cs-paragraph" id="home">
    <div class="paragraph-header">Главная</div>
@@ -285,8 +561,8 @@
    </div>
 </div>
 
-
-<div class="cs-paragraph" id='4'>
+<div class="cs-paragraph" id='cl-srv-architecture'>
+   <div class="paragraph-header">Клиент-серверная архитектура</div>
    <div class="paragraph-body">
       <h2 class="text-center">Понятие о клиент-серверной архитектуре
          Веб-приложений</h2>
@@ -420,7 +696,7 @@
 
       <hr class="featurette-divider">
 
-      <table class="table">
+      <table class="table text-center">
          <thead>
          <tr>
             <td>Объект</td>
@@ -433,7 +709,7 @@
          </thead>
          <tbody>
          <tr>
-            <td>Гиперссылки</td>
+            <td class="text-left">Гиперссылки</td>
             <td><span class='glyphicon glyphicon-ok'></span></td>
             <td><span class='glyphicon glyphicon-ok'></span></td>
             <td><span class='glyphicon glyphicon-ok'></span></td>
@@ -441,7 +717,7 @@
             <td><span class='glyphicon glyphicon-ok'></span></td>
          </tr>
          <tr>
-            <td>Изображения</td>
+            <td class="text-left">Изображения</td>
             <td><span class='glyphicon glyphicon-ok'></span></td>
             <td><span class='glyphicon glyphicon-ok'></span></td>
             <td><span class='glyphicon glyphicon-ok'></span></td>
@@ -449,7 +725,7 @@
             <td><span class='glyphicon glyphicon-ok'></span></td>
          </tr>
          <tr>
-            <td>Списки</td>
+            <td class="text-left">Списки</td>
             <td><span class='glyphicon glyphicon-ok'></span></td>
             <td><span class='glyphicon glyphicon-ok'></span></td>
             <td><span class='glyphicon glyphicon-ok'></span></td>
@@ -457,7 +733,7 @@
             <td><span class='glyphicon glyphicon-ok'></span></td>
          </tr>
          <tr>
-            <td>Активные карты и изображения</td>
+            <td class="text-left">Активные карты и изображения</td>
             <td></td>
             <td><span class='glyphicon glyphicon-ok'></span></td>
             <td><span class='glyphicon glyphicon-ok'></span></td>
@@ -465,7 +741,7 @@
             <td><span class='glyphicon glyphicon-ok'></span></td>
          </tr>
          <tr>
-            <td>Формы</td>
+            <td class="text-left">Формы</td>
             <td></td>
             <td><span class='glyphicon glyphicon-ok'></span></td>
             <td><span class='glyphicon glyphicon-ok'></span></td>
@@ -473,7 +749,7 @@
             <td><span class='glyphicon glyphicon-ok'></span></td>
          </tr>
          <tr>
-            <td>Математические формы</td>
+            <td class="text-left">Математические формы</td>
             <td></td>
             <td></td>
             <td><span class='glyphicon glyphicon-ok'></span></td>
@@ -481,7 +757,7 @@
             <td><span class='glyphicon glyphicon-ok'></span></td>
          </tr>
          <tr>
-            <td>Панели инструментов</td>
+            <td class="text-left">Панели инструментов</td>
             <td></td>
             <td></td>
             <td><span class='glyphicon glyphicon-ok'></span></td>
@@ -489,7 +765,7 @@
             <td><span class='glyphicon glyphicon-ok'></span></td>
          </tr>
          <tr>
-            <td>Таблицы</td>
+            <td class="text-left">Таблицы</td>
             <td></td>
             <td></td>
             <td></td>
@@ -497,7 +773,7 @@
             <td><span class='glyphicon glyphicon-ok'></span></td>
          </tr>
          <tr>
-            <td>Возможености по обеспечению доступности</td>
+            <td class="text-left">Возможености по обеспечению доступности</td>
             <td></td>
             <td></td>
             <td></td>
@@ -505,7 +781,7 @@
             <td><span class='glyphicon glyphicon-ok'></span></td>
          </tr>
          <tr>
-            <td>Встраивание объектов</td>
+            <td class="text-left">Встраивание объектов</td>
             <td></td>
             <td></td>
             <td></td>
@@ -513,7 +789,7 @@
             <td><span class='glyphicon glyphicon-ok'></span></td>
          </tr>
          <tr>
-            <td>Таблицы стилей</td>
+            <td class="text-left">Таблицы стилей</td>
             <td></td>
             <td></td>
             <td></td>
@@ -521,7 +797,7 @@
             <td><span class='glyphicon glyphicon-ok'></span></td>
          </tr>
          <tr>
-            <td>Скрипты</td>
+            <td class="text-left">Скрипты</td>
             <td></td>
             <td></td>
             <td></td>
@@ -529,7 +805,7 @@
             <td><span class='glyphicon glyphicon-ok'></span></td>
          </tr>
          <tr>
-            <td>Видео и аудио</td>
+            <td class="text-left">Видео и аудио</td>
             <td></td>
             <td></td>
             <td></td>
@@ -537,7 +813,7 @@
             <td><span class='glyphicon glyphicon-ok'></span></td>
          </tr>
          <tr>
-            <td>Электронная графика</td>
+            <td class="text-left">Электронная графика</td>
             <td></td>
             <td></td>
             <td></td>
@@ -545,7 +821,7 @@
             <td><span class='glyphicon glyphicon-ok'></span></td>
          </tr>
          <tr>
-            <td>Отображение XML</td>
+            <td class="text-left">Отображение XML</td>
             <td></td>
             <td></td>
             <td></td>
@@ -553,7 +829,7 @@
             <td><span class='glyphicon glyphicon-ok'></span></td>
          </tr>
          <tr>
-            <td>Фоновые потоки</td>
+            <td class="text-left">Фоновые потоки</td>
             <td></td>
             <td></td>
             <td></td>
@@ -561,7 +837,7 @@
             <td><span class='glyphicon glyphicon-ok'></span></td>
          </tr>
          <tr>
-            <td>Хранение информации в браузере</td>
+            <td class="text-left">Хранение информации в браузере</td>
             <td></td>
             <td></td>
             <td></td>
@@ -569,7 +845,7 @@
             <td><span class='glyphicon glyphicon-ok'></span></td>
          </tr>
          <tr>
-            <td>Область рисования</td>
+            <td class="text-left">Область рисования</td>
             <td></td>
             <td></td>
             <td></td>
@@ -681,13 +957,14 @@
       </div>
    </div>
 </div>
+
 <div class="cs-paragraph" id='back-end-frameworks'>
-   <div class="paragraph-header">back-end и фреймворки
+   <div class="paragraph-header">Back-end и фреймворки
    </div>
    <div class="paragraph-subheader"></div>
    <div class="paragraph-body">
       <h2 class="text-center">
-         back-end и фреймворки
+         Back-end и фреймворки
       </h2>
       <h3>На чем писать серверное приложение?</h3>
       <p>Итак, ранее было сказано, что Веб-приложения состоят из двух взаимодействующих меж собой частей - front-end и back-end. Язык, на котором обрабатываются данные на уровне клиента - это язык, который понимает ваш браузер - JavaScript. На каком же языке работает back-end? На любом языке, который понимает компьютер (в качестве этого языка может использоваться даже JavaScript).
@@ -763,7 +1040,7 @@
          </p>
       <pre>
          <code>
-            class HomeController < ApplicationController
+            class HomeController &lt; ApplicationController
             respond_to :json
             def index
             @content = Content.all
@@ -782,7 +1059,7 @@
          </p>
       <pre>
          <code>
-            class CreateArticles < ActiveRecord::Migration
+            class CreateArticles &lt; ActiveRecord::Migration
             def change
             create_table :contents do |t|
             t.string :title
@@ -793,13 +1070,14 @@
             end
             end
          </code>
-   </pre>
+      </pre>
 
       </div>
 
 
    </div>
 </div>
+
 <div class="cs-paragraph" id="javascript">
    <div class="paragraph-header">JavaScript</div>
    <div class="paragraph-subheader"></div>
@@ -819,8 +1097,8 @@
 
       <hr class="featurette-divider">
 
+      <h2 class="">История создания</h2>
       <div class="row">
-         <h2 class="">История создания</h2>
          <div class="col-lg-8 ">
             <p class="">
                Во времена великих войн браузеров компания Netscape наняла некоего Брендана Эйха на должность разработчика, поставив перед ним задачу внедрения аналога Лиспа в свой продукт. Техническое задание было весьма размытым и не очевидным (язык должен был управлять HTML, java-аплетами, изображениями и т.д. ). Язык был написан Эйхом за 10 дней, и первоначально имел название Mocha(это не шутка). Позднее, после нескольких переименований, язык назвали JavaScript, поскольку в те времена язык Java был очень популярен, и считался эталонным. Собственно название до сих пор принадлежит Oracle.
@@ -837,10 +1115,10 @@
 
 
       <hr class="featurette-divider">
+      <h2 class="">
+         Анализ JavaScript
+      </h2>
       <div class="row">
-         <h2 class="">
-            Анализ JavaScript
-         </h2>
          <div class="col-md-4 col-lg-4">
             <p class="">
                JavaScript - язык, в основе которого лежат как хорошие, так и плохие вещи (порой, даже очень плохие). Хорошие вещи связаны с применением функций, нестрогой типизацией и динамическими объектами. Плохие вещи - модель программирования на основе глобальных переменных, странный синтаксис наследования, множество особенностей, которые надо просто “знать”.
@@ -914,12 +1192,11 @@
    </div>
 </div>
 
-
 <div class="cs-paragraph" id='web-srv'>
-   <div class="paragraph-header">Front-end фреймворки</div>
+   <div class="paragraph-header">Принципы работы Веб-серверов</div>
    <div class="paragraph-subheader"></div>
    <div class="paragraph-body">
-      <h2 class="text-center"></h2>
+      <h2 class="text-center">Принципы работы Веб-серверов</h2>
       <h3>Что такое Веб-сервер</h3>
       <p>
          Веб-сервер — сервер, принимающий HTTP-запросы от клиентов, обычно веб-браузеров, и выдающий им HTTP-ответы, как правило, вместе с HTML-страницей, изображением, файлом, медиа-потоком или другими данными.
@@ -1000,6 +1277,90 @@
          </div>
       </div>
    </div>
+</div>
+
+<div class="cs-paragraph" id='modern-web-srv'>
+   <div class="paragraph-header">Современные веб-серверы</div>
+   <div class="paragraph-subheader"></div>
+   <div class="paragraph-body">
+      <h2 class="text-center">Современные Веб-серверы</h2>
+      <h3>Наиболее известные веб-серверы:</h3>
+      <ul>
+         <li> Apache HTTP Server</li>
+         <li> Google Web Server</li>
+         <li> Internet Information Services</li>
+         <li> Tomcat</li>
+         <li> Jetty</li>
+         <li> Starman</li>
+         <li> nginx</li>
+         <li> lighttpd</li>
+         <li> NodeJS</li>
+      </ul>
+      <h3>Сравнительная таблица веб-серверов</h3>
+      <table class="table table-bordered">
+         <thead>
+         <tr>
+            <td>Название</td>
+            <td>Автор и год создания</td>
+            <td>Open Sourse?</td>
+            <td>Особенности</td>
+         </tr>
+         </thead>
+         <tbody class="text-center">
+         <tr>
+            <td>Apache HTTP Server</td>
+            <td>Apache Software Foundation, 1995</td>
+            <td><span class='glyphicon glyphicon-ok'></span></td>
+            <td>Упор на надёжность и гибкость.</td>
+         </tr>
+
+         <tr>
+            <td>Tomcat</td>
+            <td>Sun Microsystems, Apache Software Foundation, 1999</td>
+            <td><span class='glyphicon glyphicon-ok'></span></td>
+            <td>Реализован полностью на Java.</td>
+         </tr>
+         <tr>
+            <td>Internet Information Services</td>
+            <td>Microsoft, 1995</td>
+            <td><span class='glyphicon glyphicon-remove'></span></td>
+            <td>Является частью пакета IIS. Поддерживает .NET</td>
+         </tr>
+         <tr>
+            <td>Jetty</td>
+            <td>Mort Bay Consulting, 1995</td>
+            <td><span class='glyphicon glyphicon-ok'></span></td>
+            <td>Реализован полностью на Java.</td>
+         </tr>
+         <tr>
+            <td>nginx</td>
+            <td>Игорь Сысоев, 2002</td>
+            <td><span class='glyphicon glyphicon-ok'></span></td>
+            <td>Разрабатывался для испытывающих большую нагрузку серверов. Включает в себя почтовый прокси-сервер.</td>
+         </tr>
+         <tr>
+            <td>lighttpd</td>
+            <td>Jan Kneschke,февраль 2003</td>
+            <td><span class='glyphicon glyphicon-ok'></span></td>
+            <td>Использование на сильно нагруженных серверах, обеспечение быстроты и защищённости.</td>
+         </tr>
+         <tr>
+            <td>NodeJS</td>
+            <td>Ryan Lienhart Dahl, 2009</td>
+            <td><span class='glyphicon glyphicon-ok'></span></td>
+            <td>Асинхронный язык высокого уровня</td>
+         </tr>
+         <tr>
+            <td></td>
+            <td>FriendFeed, 2009</td>
+            <td><span class='glyphicon glyphicon-ok'></span></td>
+            <td>Асинхронный сервер, написан на питоне</td>
+         </tr>
+         </tbody>
+      </table>
+   </div>
+</div>
+
 </div>
 </body>
 </html>

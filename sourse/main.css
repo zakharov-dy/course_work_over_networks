@@ -11,16 +11,21 @@
 .cs-content
 {
    margin-top: 90px;
+   margin-bottom: 50px;
 }
 
+.cs-navbar-content
+{
+   background-color: #f5f5f5;
+   border-radius: 15px;
+   border: 1px solid #337ab7;
+}
 .cs-navbar
 {
    margin-top: 20px;
    position: absolute;
    z-index: 20;
-   position: absolute;
    top: 0;
    right: 0;
    left: 0;
-   z-index: 20;
 }
