@@ -6,5 +6,5 @@ $( document ).ready(function() {
       $("#paragraph-title").text(paragraphHeader);
       $("#paragraph-content").html(paragraphBody);
    });
-   $("#p-home").click();
+   $("#p-title-page").click();
 });

@@ -3,12 +3,12 @@
 <head>
    <meta charset="utf-8">
    <title>Курсовая работа</title>
-   <script src="sourse/jquery-2.1.4.min.js" charset="utf-8"></script>
-   <script src="sourse/bootstrap-3.3.5-dist/js/bootstrap.min.js" charset="utf-8"></script>
-   <script src="sourse/main.js" charset="utf-8"></script>
-   <link rel="stylesheet" href="sourse/bootstrap-3.3.5-dist/css/bootstrap.min.css">
-   <link rel="stylesheet" href="sourse/bootstrap_upgrade.css">
-   <link rel="stylesheet" href="sourse/main.css">
+   <script src="source/jquery-2.1.4.min.js" charset="utf-8"></script>
+   <script src="source/bootstrap-3.3.5-dist/js/bootstrap.min.js" charset="utf-8"></script>
+   <script src="source/main.js" charset="utf-8"></script>
+   <link rel="stylesheet" href="source/bootstrap-3.3.5-dist/css/bootstrap.min.css">
+   <link rel="stylesheet" href="source/bootstrap_upgrade.css">
+   <link rel="stylesheet" href="source/main.css">
 
 </head>
 <body>
@@ -23,10 +23,8 @@
 
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                <ul class="nav navbar-nav">
-                  <li><a href="#" class="cs-head" id="p-home"><span class="glyphicon glyphicon-home"></span> Главная </a></li>
-                  <li><a href="#" class="cs-head" id="p-title-page"><span class="glyphicon glyphicon-home"></span> Главная </a></li>
-                  <li><a href="#"><span class="glyphicon glyphicon-briefcase"></span> Технологии </a></li>
-                  <li><a href="#"><span class="glyphicon glyphicon-book"></span> Список литературы </a></li>
+                  <li><a href="#" class="cs-head" id="p-title-page"><span class="glyphicon glyphicon-file"></span> Титульная страница </a></li>
+                  <li><a href="#" class="cs-head" id="p-bibliography"><span class="glyphicon glyphicon-book" ></span> Список литературы </a></li>
                </ul>
             </div>
          </div>
@@ -41,18 +39,12 @@
             <div class="panel-heading" role="tab" id="collapseListGroupHeading">
                <h4 class="panel-title">
                   <a class="collapsed" role="button" data-toggle="collapse" href="#collapseListGroup" aria-expanded="false" aria-controls="collapseListGroup" data-parent="#accordion">
-                     Стандарты веб-технологий и веб-протоколы
+                     Протокол HTTP
                   </a>
                </h4>
             </div>
             <div id="collapseListGroup" class="panel-collapse collapse" role="tabpanel" aria-labelledby="collapseListGroupHeading" aria-expanded="false" style="height: 0px;">
                <ul class="list-group">
-                  <li class="list-group-item">
-                     <a href="#" class="cs-head" id="p-web-standarts">
-                        Стандарты
-                        веб-технологий
-                     </a>
-                  </li>
                   <li class="list-group-item">
                      <a href="#" class="cs-head" id="p-HTTP">
                         Общие сведения о HTTP
@@ -78,6 +70,12 @@
                <ul class="list-group">
                   <li class="list-group-item">
                      <a href="#" class="cs-head" id="p-cl-srv-architecture">Понятие о клиент-сервернй архитектуре Веб-приложений
+                     </a>
+                  </li>
+                  <li class="list-group-item">
+                     <a href="#" class="cs-head" id="p-web-standarts">
+                        Стандарты
+                        веб-технологий
                      </a>
                   </li>
                   <li class="list-group-item">
@@ -158,27 +156,46 @@
 
 
 
+<div class="cs-paragraph" id="bibliography">
+   <div class="paragraph-header">Список литературы</div>
+   <div class="paragraph-body">
+      <h2 class="text-center">Список литературы</h2>
+      <ol>
+         <li>Компьютерные сети. 5-е изд. / Э. Таненбаум. — СПб.: Питер, 2012. — 960 с.: ил.  – (Серия «Классика Computer Science»).</li>
+         <li>Компьютерные сети. Принципы, технологии, протоколы . 3-е изд./ В. Г. Олифер, Н. А. Олифер. – СПб.: Питер, 2006. – 958 с.: ил.</li>
+         <li>Мировые информационные ресурсы. - ИНТУИТ, 2013. - 441 с.</li>
+         <li>Rails 4. Гибкая разработка веб-приложений. — СПб.: Питер, 2014. — 448 с.: ил. — (Серия «Для профессионалов»).</li>
+         <li>JavaScript: сильные стороны. - Спб.: Питер, 2012. - 176 с.: ил</li>
+         <li>Самоучитель HTML в PDF. Влад Мержевич, 2011. - 97с.</li>
+         <li>Web-технологии. - Технопарк Mail.ru Group. [Видеокурс]. - Режим доступа: http://www.intuit.ru/studies/courses/3668/910/info, свободный.</li>
+         <li>Обзор JS-фреймворков. [Электронный ресурс]. – Режим доступа: http://habrahabr.ru/post/149594/, свободный.</li>
+         <li>30 CSS-фреймворков для адаптивного веб-дизайна. [Электронный ресурс]. – Режим доступа: http://habrahabr.ru/post/156747/, свободный.</li>
+         <li>Веб-стандарты. [Электронный ресурс]. – Режим доступа: https://developer.mozilla.org/ru/docs/Веб-стандарты, свободный.</li>
+         <li>Сравнение веб-серверов [Электронный ресурс]. – Режим доступа: https://ru.wikipedia.org/wiki/Сравнение_веб-серверов, свободный.</li>
+      </ol>
+   </div>
+</div>
 
 <div class="cs-paragraph" id="title-page">
    <div class="paragraph-header">Титульная страница</div>
    <div class="paragraph-body">
       <h4 class="text-center"><b>ГОУВПО</b></h4>
       <h4 class="text-center"><b>Уфимский государственный авиационный технический университет</b></h4>
-      <p class="text-right">Кафедра вычислительной техники и защиты информации</p>
+      <p class="text-right cs-title-department">Кафедра вычислительной техники и защиты информации</p>
       <h3 class="text-center">Курсовая работа по дисциплине "Сети и системы передачи данных"</h3>
       <h3 class="text-center"></h3>
-      <h2 class="text-center">"Анализ современных web-технологий и протокола HTTP.
+      <h2 class="text-center cs-title-name">"Анализ современных web-технологий и протокола HTTP.
          Языки и средства создания web-приложений. Современные Веб серверы."</h2>
       <p class="text-left">Выполнил: студент гр. БПС-403</p>
       <p class="text-left">Д. Ю. Захаров</p>
       <p class="text-left">Проверил: кандидат физико-математических наук, доцент</p>
-      <p class="text-left">Р.А. Гараев</p>
-      <p class="text-center">Уфа 2015</p>
+      <p class="text-left">Р. А. Гараев</p>
+      <p class="text-center cs-title-age">Уфа 2015</p>
    </div>
-   </div>
+</div>
 
 <div class="cs-paragraph" id="HTTP-struct">
-   <div class="paragraph-header">Общие сведения о HTTP</div>
+   <div class="paragraph-header">Структура HTTP пакета</div>
    <div class="paragraph-body">
       <h2 class="text-center">Структура HTTP пакета</h2>
       <h3>Три части HTTP</h3>
@@ -188,7 +205,7 @@
          <li>Заголовки - разная полезная информация, которая характеризует тело сообщения, параметры передачи и прочие сведения;</li>
          <li>Тело сообщения - это сгенерированный html-код, который браузер потом будет отображать. Обязательно должно отделяться от заголовков пустой строкой.</li>
       </ul>
-      <img src="sourse/http.jpg" alt="" class="img-responsive">
+      <img src="source/http.jpg" alt="" class="img-responsive">
       <div class="row">
          <div class="col-lg-6 col-md-6">
             <h3>HTTP-запрос</h3>
@@ -407,7 +424,7 @@
 <div class="cs-paragraph" id="HTTP">
    <div class="paragraph-header">Общие сведения о HTTP</div>
    <div class="paragraph-body">
-      <h2>Общие сведения о HTTP</h2>
+      <h2 class="text-center">Общие сведения о HTTP</h2>
       <h3>Кратко об HTTP</h3>
       <p>HTTP (HyperText Transfer Protocol — протокол передачи гипертекста) - простой протокол прикладного уровня, работающий по принципу запрос-ответ,  обычно содержится в пакете TCP. </p>
       <p>Несмотря на свою прикладную природу HTTP всё больше становится больше похож на транспортный протокол, который предоставляет способ передачи контента из одной сети в другую. Эти процессы не всегда идут в рамках общения веб-браузера с веб-сервером. </p>
@@ -424,53 +441,13 @@
       <p>
          Разница в производительности между этими тремя случаями показана на рисунке.
       </p>
-      <img src="sourse/connect.png" alt="" class="img-responsive">
+      <img src="source/connect.png" alt="" class="img-responsive">
       <p>В первой части мы видим три запроса, отсылаемых один за другим, при этом для каждого устанавливается отдельное соединение. Предположим, что это представление страницы с двумя размещенными на ней картинками, находящимися на одном сервере. URL изображений определяется при получении главной страницы, так что они получаются позднее ее. Сегодня на обычной странице присутствует около 40 других объектов, которые должны быть получены для ее отображения. Но это сделает рисунок огромным, так что в примере используется  всего два размещенных объекта.</p>
       <p>В центре рисунка  страница получена при помощи постоянного соединения. То есть TCP-соединение открывается с самого начала, затем посылаются те же самые 3 запроса, как и раньше один за другим, и только после этого соединение закрывается. Такой алгоритм является более производительным.
       </p>
       <p>
          Наконец, в правой части рисунка,  установлено одно постоянное соединение, а запросы передаются конвейеризовано. Второй и третий запросы отсылаются за особенно короткий промежуток времени, так как была получена достаточно большая часть главной страницы, чтобы можно было сделать вывод о том, что изображения должны быть загружены и отображены. В итоге приходят ответы на эти запросы. Этот метод сокращает время, в течение которого сервер не занят делом, так что он и дальше повышает производительность. Основной вопрос данной схемы — это «когда закрывать соединение?» Соединение с сервером не должно разрываться, пока загружается страница. На практике клиенты и серверы обычно сохраняют постоянное соединение, пока не пройдет какого-то небольшого промежутка времени (например, 60 с), в течение которого не будет отослано ни одного запроса и не будет принято ни одного ответа, или же в том случае, если открыто слишком много соединений и некоторые следует закрыть.
       </p>
-   </div>
-</div>
-
-<div class="cs-paragraph" id="home">
-   <div class="paragraph-header">Главная</div>
-   <div class="paragraph-subheader">Анализ современных веб технологий и соответствующих протоколов. Языки и средства создания веб приложений. Архитектура, создание и эксплуатация веб-серверов</div>
-   <div class="paragraph-body">
-      <div class="row">
-         <div class="col-md-7">
-            <h2 class="featurette-heading"> Стандарты веб-технологий и веб-протоколы <span class="text-muted"></span></h2>
-            <p class="">Здесь будет описание</p>
-         </div>
-         <div class="col-md-5">
-            <img class="featurette-image img-responsive center-block" src="sourse/W3C®_Icon.svg" alt="Generic placeholder image">
-         </div>
-      </div>
-
-      <hr class="featurette-divider">
-
-      <div class="row">
-         <div class="col-md-7 col-md-push-5">
-            <h2 class="featurette-heading">Языки и средства создания Веб-приложений. <span class="text-muted">Самая интересная часть.</span></h2>
-            <p class="">В данной главе повествуется о том, как работает веб с позиции программиста. Дается представление о языках программирования, современных front-end и back-end фреймворках.</p>
-         </div>
-         <div class="col-md-5 col-md-pull-7">
-            <img class="featurette-image img-responsive center-block" src="sourse/js.png" alt="Generic placeholder image">
-         </div>
-      </div>
-
-      <hr class="featurette-divider">
-
-      <div class="row">
-         <div class="col-md-7 col-md-5">
-            <h2 class="featurette-heading">Веб-серверы. <span class="text-muted">Ещё не придумано</span></h2>
-            <p class="">В последней главе рассматриваются принципы работы современных Веб-серверов, а также дается краткая справка по наиболее популярным Веб-серверам.</p>
-         </div>
-         <div class="col-md-5 col-md-7">
-            <img class="featurette-image img-responsive center-block" src="sourse/Nginx-vs-Apache.png" alt="Generic placeholder image">
-         </div>
-      </div>
    </div>
 </div>
 
@@ -552,12 +529,15 @@
          </p>
       </div>
       <h3>Наиболее популярные css-фреймворки:</h3>
-      <li>Bootstrap</li>
-      <li>Maxmertkit </li>
-      <li>Twitter Flight </li>
-      <li>Blueprint</li>
-      <li>960 Grid System</li>
-      <li>Yet Another Multicolumn Layout (YAML)Bluetrip</li>
+      <ul>
+         <li>Bootstrap</li>
+         <li>Maxmertkit </li>
+         <li>Twitter Flight </li>
+         <li>Blueprint</li>
+         <li>960 Grid System</li>
+         <li>Yet Another Multicolumn Layout (YAML)Bluetrip</li>
+      </ul>
+
    </div>
 </div>
 
@@ -591,7 +571,7 @@
       <p>
          Это действие показано как шаги 1–3. Запрос (шаг 1) вызывает запуск программы на сервере. Программа опрашивает базу данных и генерирует нужную страницу (шаг 2) и возвращает ее в браузер (шаг 3).
       </p>
-      <img src="sourse/cl-srv.png" alt="" class="img-responsive">
+      <img src="source/cl-srv.png" alt="" class="img-responsive">
       <p>
          Возвращаемая страница сама может содержать программы, которые запускаются в браузере. В нашем примере программа позволяет пользователю находить маршруты и исследовать прилежащие области с разными уровнями детализации. Она обновляет страницу, увеличивая или уменьшая масштаб в соответствии с запросами пользователя (шаг 4). Чтобы провести некоторые операции, программе может понадобиться больше данных с сервера. В этом случае программа отошлет запрос на сервер (шаг 5), который отыщет нужную информацию в базе данных (шаг 6) и вернет ответ (шаг 7). Затем программа продолжит вносить изменения на страницу (шаг 4).
       </p>
@@ -622,23 +602,23 @@
    <div class="paragraph-header">Стандарты веб-технологий</div>
    <div class="paragraph-subheader"></div>
    <div class="paragraph-body">
-      <h2>Стандарты Веб-технологий</h2>
+      <h2 class="text-center">Стандарты Веб-технологий</h2>
       <h3>
          Что такое веб-стандарты
       </h3>
       <p>Веб-стандарты, как следует из их названия, являются стандартами в области веб-технологий. Эти стандарты являются рекомендациями для разработчиков программного обеспечения и для веб-мастеров. Служат веб-стандарты для того, чтобы, с одной стороны, пользователи ПО без проблем и неудобств могли пользоваться сетью интернет, а с другой стороны, для того, чтобы разработчики программного обеспечения или веб-мастера были уверены в работоспособности своих продуктов.
       </p>
 
-      <h2>
+      <h3>
          Немного о войнах браузеров
-      </h2>
+      </h3>
       <p>
          Исторически сложилось так, что в начале 90-х годов XX века развязалась так называемая "война браузеров" между компанией Netscape и Microsoft. Суть войны заключалась в том, что разработчики веб-браузеров стремились привнести в продукты своих разработок собственные новые функции, но при этом совершенно не заботились о совместимости технологий и не согласовывали свои действия с разработчиками конкурирующей компании. По этой причине начало возрастать недовольство как среди людей, создающих сайты, так и среди людей, пользующихся сетью интернет - ведь сайты, которые были написаны специально для Netscape Navigator крайне плохо работали в Microsoft Intrnet Explorer и наоборот посредством Internet Explorer почти невозможно было просматривать сайт, написанный для Netscape Navigator.
       </p>
 
-      <h2>
+      <h3>
          World Wide Web Consortcium
-      </h2>
+      </h3>
       <p>
          В 1994 году в Массачусетском технологическом институте при поддержке CERN, DARPA и Европейской Комиссии появилась организация World Wide Web Consortcium или, сокращенно, W3C. Целью консорциума по сей день является упорядочивание всех веб-технологий для того, чтобы обеспечить их доступность как можно большему числу людей всего мира.
       </p>
@@ -656,7 +636,7 @@
          <h3>Об HTML 'в двух словах'</h3>
          <p>Вообще говоря HTML(от англ. HyperText Markup Language — «язык
             гипертекстовой разметки») - это язык разметки
-            документов(Как нпример XML или Markdown ).
+            документов (Как например XML или Markdown ).
             C помощью HTML можно размещать на веб-страницах текст,
             графику, видео, а также указатели на другие страницы и т. п.
             Языки разметки содержат подробные команды форматирования. Например, в языке HTML команда &lt;b&gt; означает начало участка текста, печатаемого полужирным шрифтом, а &lt;/b&gt; означает конец такого участка.</p>
@@ -996,7 +976,7 @@
       <hr class="featurette-divider">
       <h3>Общие сведения о серверных фреймворках на примере Ruby on Rails</h3>
       <p>Поскольку все фреймворки описать не представляется возможным дадим представление о работе серверных фреймворках на примере  Ruby on Rails (RoR).</p>
-      <img src="sourse/ruby-rails.jpg" alt="" class="img-responsive">
+      <img src="source/ruby-rails.jpg" alt="" class="img-responsive">
       <p>Как и многие другие, RoR имеет MVC архитектуру, позволяющую отделить мух от котлет. В стандартном шаблоне фреймворка находится около </p>
       <h4>Модель</h4>
       <p>Модель предоставляет остальным компонентам приложения объектно-ориентированное отображение данных (таких как каталог продуктов или список заказов). Объекты модели могут осуществлять загрузку и сохранение данных в реляционной базе данных, а также реализуют бизнес-логику.</p>
@@ -1011,11 +991,11 @@
       <p>Соответствие интернет-адреса с действием контроллера (маршрут) задается в файле <code>config/routes.rb</code>.Там же задается тип запроса.
       </p>
       <h4>Схема взаимодействия компонентов MVC</h4>
-      <img src="sourse/MVC_schem.png" alt="" class="img-responsive">
+      <img src="source/MVC_schem.png" alt="" class="img-responsive">
       <div class="">
          <h3>Простой пример</h3>
          <p>
-            Представим, что существует некоторое приложение, хранящее статьи в интернете. Для простоты назовем статьи контентом. Представим также, что статьи должны выдаваться по адресу <code>.../home/index.json</code> В этом виде их подхватывает клиентское приложение и красиво отображает пользователю
+            Представим, что существует некоторое приложение, хранящее статьи в интернете. Для простоты назовем статьи контентом. Представим также, что статьи должны выдаваться по адресу <code>имя_вашего_сервера/home/index.json</code> В этом виде их подхватывает клиентское приложение и красиво отображает пользователю
          </p>
          <h4>Пример маршрута</h4>
          <p>
@@ -1108,7 +1088,7 @@
             </p>
          </div>
          <div class="col-lg-4">
-            <img class="img-responsive" src="sourse/BEich.jpg">
+            <img class="img-responsive" src="source/BEich.jpg">
             <p class="text-right ">Брендан Эйх</p>
          </div>
       </div>
@@ -1134,31 +1114,6 @@
                Поскольку почти всё в JavaScript это объект, то функции, к примеру, могут содержать в себе другие функции, массивы и другие объекты. При этом для создания нового объекта используется прототип - объект, от которого необходимо провести наследование.
             </p>
          </div>
-         <p class=" text-right">
-            Пример создания объекта:
-         </p>
-         <p class=" text-right">
-            <code>
-               var myCar = new Object();
-            </code>
-
-         </p>
-         <p class=" text-right">
-            <code>
-               myCar.make = "Ford";
-            </code>
-         </p>
-         <p class=" text-right">
-            <code>
-               myCar.model = "Mustang";
-            </code>
-
-         </p>
-         <p class=" text-right">
-            <code>
-               myCar.year = 1969;
-            </code>
-         </p>
       </div>
 
 
@@ -1180,7 +1135,6 @@
          </ul>
       </div>
 
-      <hr class="featurette-divider">
       <div class="alert alert-danger ">
          <h2>
             Плохие вещи
@@ -1189,6 +1143,16 @@
             В книге Дугласа Крокфорда под названием  “JavaScript - сильные стороны”, под главы “Кошмарные вещи” и “Плохие вещи” отводится 16 страниц, в то время, как в глава “Прекрасные черты” содержит всего 3 страницы текста. Сам Крокфорд - эксперт в JavaScript, один из его самых ярых защитников, а также основатель формата JSON. Понимаете, о чем я?
          </p>
       </div>
+      <h3>Несколько странностей, которыми обычно пугают новичков:</h3>
+      <ul>
+         <li>NaN является числом<p>Специальное значение NaN(«Not a Number» — не число) является числом!</p>
+            <p><code>typeof NaN == 'number' //true</code></p></li>
+         <li>Операторы <code>>=</code> и <code>==</code> по-разному интерпретируют null         <p><code>null > 0 //false</code></p>
+            <p><code>null == 0 //false</code></p>
+            <p><code>null >= 0 //true</code></p></li>
+
+         <li> 0.1 + 0.2 не равно 0.3 <p><code> 0.1 + 0. 2 //0.30000000000000004</code></p></li>
+      </ul>
    </div>
 </div>
 
@@ -1207,7 +1171,7 @@
       <p>
          Общий алгоритм работы веб-сервера можно представить следующим образом (зеленым цветом помечены действия, которые обрабатываются веб-сервером)
       </p>
-      <img src="sourse/web-srv.jpg" alt="" class="img-responsive">
+      <img src="source/web-srv.jpg" alt="" class="img-responsive">
       <p>
          После того, как пользователь обратился к определенному ресурсу по протоколу HTTP, клиент (обычно браузер) формирует HTTP-запрос к веб-серверу. Обычно указывается символическое имя сервера (например, "http://www.microsoft.com") – в этом случае браузер предварительно преобразует это имя в IP-адрес при помощи сервисов DNS. После этого по протоколу HTTP на веб-сервер отправляется сформированное HTTP-сообщение. В этом сообщении браузер указывает какой ресурс необходимо загрузить и всю дополнительную информацию. Задача веб-сервера – прослушивать определенный TCP-порт (обычно порт 80) и принимать все входящие HTTP-сообщения.
       </p>
@@ -1225,7 +1189,7 @@
       <p>
          Вместо этого, на сервере хранится программный код, который способен сгенерировать эти данные в момент обработки запроса. Разумеется, некоторые ресурсы (такие как файлы каскадных стилей, изображения и т.д.) могут храниться как статическое содержимое, но основные страницы HTML генерируют в процессе обработки. В таком случае веб-сервер при обработке запроса HTTP должен обращаться к программному коду, который должен сгенерировать содержимое. С учетом вышесказанного алгоритм работы веб-сервера будет выглядеть следующим образом.
       </p>
-      <img src="sourse/web-srv2.jpg" alt="" class="img-responsive">
+      <img src="source/web-srv2.jpg" alt="" class="img-responsive">
       <p>
          Следует отметить, что под выполнением программного кода можно понимать две вещи:
       </p>
@@ -1287,14 +1251,13 @@
       <h3>Наиболее известные веб-серверы:</h3>
       <ul>
          <li> Apache HTTP Server</li>
-         <li> Google Web Server</li>
-         <li> Internet Information Services</li>
          <li> Tomcat</li>
+         <li> Internet Information Services</li>
          <li> Jetty</li>
-         <li> Starman</li>
          <li> nginx</li>
          <li> lighttpd</li>
          <li> NodeJS</li>
+         <li> Tornado</li>
       </ul>
       <h3>Сравнительная таблица веб-серверов</h3>
       <table class="table table-bordered">
@@ -1302,7 +1265,7 @@
          <tr>
             <td>Название</td>
             <td>Автор и год создания</td>
-            <td>Open Sourse?</td>
+            <td>Open Source?</td>
             <td>Особенности</td>
          </tr>
          </thead>
@@ -1351,7 +1314,7 @@
             <td>Асинхронный язык высокого уровня</td>
          </tr>
          <tr>
-            <td></td>
+            <td>Tornado</td>
             <td>FriendFeed, 2009</td>
             <td><span class='glyphicon glyphicon-ok'></span></td>
             <td>Асинхронный сервер, написан на питоне</td>
