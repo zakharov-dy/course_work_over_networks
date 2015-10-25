@@ -42,3 +42,14 @@
 {
    margin-top: 90px;
 }
+.cs-container-bottom
+{
+   position: absolute;
+}
+#cs-footer
+{
+   position: fixed;
+   bottom: 0px;
+   display: none;
+   cursor: pointer;
+}
